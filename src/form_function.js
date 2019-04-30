@@ -8,6 +8,8 @@ function serviceRequest(formData) {
         instType: formData.get('inst-type'),
         skillLevel: skillLevel,
         workAmount: formData.get('work-amount'),
+        accessories: formData.get('accessories'),
+        story: formData.get('story'),
 
     };
     return jobTag;

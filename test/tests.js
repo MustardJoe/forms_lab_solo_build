@@ -1,4 +1,4 @@
-import serviceRequest from '../src/form_function';
+import serviceRequest from '../src/form_function.js';
 
 const test = QUnit.test;
 
@@ -9,8 +9,10 @@ test('forms test', (assert) => {
         name: 'Jorn',
         instName: 'Rambo',
         instType: 'brass',
-        skillLevel: '1',
-        workAmount: 'deluxe'
+        skillLevel: 1,
+        workAmount: 'deluxe',
+        accessories: 'trombone',
+        story: 'a story',
     };
 
     const formData = new FormData();
@@ -19,6 +21,8 @@ test('forms test', (assert) => {
     formData.set('inst-type', expected.instType);
     formData.set('skill-level', expected.skillLevel);
     formData.set('work-amount', expected.workAmount);
+    formData.set('accessories', expected.accessories);
+    formData.set('story', expected.story);
 
     //Act 
     // Call the function you're testing and set the result to a const

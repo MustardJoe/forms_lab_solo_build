@@ -72,13 +72,60 @@
         </section>
 
         <section>
-                <h2>Level of Work Required?</h2>
-                <input required type="radio" id="minimal" value="minimal" name="work-amount">
-                <label for="minimal">Minimal servicing</label>
-                <input required type="radio" id="setup" value="setup" name="work-amount">
-                <label for="setup">Full Setup</label>
-                <input required type="radio" id="deluxe" value="deluxe" name="work-amount">
-                <label for="deluxe">Deluxe Package</label>
+            <h2>Level of Work Required?</h2>
+            <input required type="radio" id="minimal" value="minimal" name="work-amount">
+            <label for="minimal">Minimal servicing</label>
+            <input required type="radio" id="setup" value="setup" name="work-amount">
+            <label for="setup">Full Setup</label>
+            <input required type="radio" id="deluxe" value="deluxe" name="work-amount">
+            <label for="deluxe">Deluxe Package</label>
+            <input required type="radio" id="busted" value="busted" name="work-amount">
+            <label for="busted">...It's <strong>REAL</strong> Busted...</label>
+        </section>
+
+        <h2>Extras:</h2>
+        <fieldset id="inst-acc">
+            <legend>
+                Will you be purchasing additional accessories?
+            </legend>
+            <div>
+                <input name="accessories" value="clarinet" type="checkbox" id="clarinet">
+                <label for="clarinet">Clarinet Reeds</label>
+            </div>
+            <div>
+                <input name="accessories" value="trombone" type="checkbox" id="trombone">
+                <label for="trombone">Trombone Slide Oil</label>
+            </div>
+            <div>
+                <input name="accessories" value="picks" type="checkbox" id="picks">
+                <label for="picks">Guitar Picks</label>
+            </div>
+            <div>
+                <input name="accessories" value="rosin" type="checkbox" id="rosin">
+                <label for="rosin">Bow Rosin</label>
+            </div>
+            <div>
+                <input name="accessories" value="bstrings" type="checkbox" id="bstrings">
+                <label for="bstring">Bass Guitar Strings</label>
+            </div>
+            <div>
+                <input name="accessories" value="cable" type="checkbox" id="cable">
+                <label for="cables">Instrument Cables</label>
+            </div>
+        </fieldset>
+
+        <div class="text-box">
+            <label for="story">
+                <p>Is there a humorous story about how you broke this instrument?</p>
+            </label>
+            <textarea name="story" id="story"></textarea>
+        </div>
+
+        <section id="button-part">
+            <h2>
+                We're Here to Help!
+            </h2>
+            <button>Submit Service Request</button>
         </section>
 
     </form>
