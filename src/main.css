@@ -1,0 +1,9 @@
+body {
+    background-color: mediumspringgreen;
+    width: 960px;
+}
+
+div {
+    width: 800;
+    text-align: center;
+}
