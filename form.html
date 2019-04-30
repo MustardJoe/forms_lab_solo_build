@@ -17,8 +17,75 @@
 
     <form id="repair-form">
 
-    </form>
+        <section id="top-o-form">
+            <h2>
+                Begin Form Now!
+            </h2>
+            <h4>
+                Please fill out a seperate form for each instrument in need
+                of repair.
+            </h4>    
+            <p>
+                <label class="stacked-label" for="name">Your Name:</label>
+                <input class="text-input" type="text" name="name" id="name" placeholder="a person name"
+                required>
+            </p>
+            <p>
+                <label class="stacked-label" for="inst-name">Your Instrument's Name:</label>
+                <input class="text-input" type="text" name="inst-name" id="inst-name" 
+                placeholder="Hank the Harmonium, etc." required>
+            </p>
+        </section>
+        
+        <section>
+            <h2>
+                Type of Instrument
+            </h2>
+            <label class="line-label" for="inst-type">
+                Choose the type of instrument you have:
+            </label>
+            <select id="inst-type" name="inst-type" required>
+                <option value="" hidden disabled selected>so many different kinds...</option>
+                <option value="stringed instrument">Stringed Instrument</option>
+                <option value="brass">Brass</option>
+                <option value="woodwind">Woodwind</option>
+                <option value="keyboard">Keyboard/Piano</option>
+                <option value="drums">Drums/Percussion</option>
+                <option value="other">Other/Uncategorizable</option>
+            </select>
+        </section>
+        
+        
+        <section>
+            <h2>
+                Skill Level
+            </h2>
+            <p>
+                Not that it matters (actually it secretly does), but on a scale of 1 to 1000,
+                how good are you at playing this instrument?
+            </p>
+            <p>
+                <label for="skill-level">Are you the best?</label>
+                <input type="range" name="skill-level" id="skill-level" min="1" 
+                max="1000" required>
+            </p>
+        </section>
 
+        <section>
+                <h2>Level of Work Required?</h2>
+                <input required type="radio" id="minimal" value="minimal" name="work-amount">
+                <label for="minimal">Minimal servicing</label>
+                <input required type="radio" id="setup" value="setup" name="work-amount">
+                <label for="setup">Full Setup</label>
+                <input required type="radio" id="deluxe" value="deluxe" name="work-amount">
+                <label for="deluxe">Deluxe Package</label>
+        </section>
+
+    </form>
+        
+        <div>
+            <a href="index.html">Main Page</a>
+        </div>
     <script type="module" src="src/app.js"></script>
-</body>
-</html>
+    </body>
+    </html>

@@ -3,7 +3,21 @@ body {
     width: 960px;
 }
 
+form {
+    background: rgb(95, 255, 194);
+    width: 850px;
+    padding: 10px;
+}
+
 div {
     width: 800;
     text-align: center;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+#top-o-form {
+    margin-top: 35px;
 }
