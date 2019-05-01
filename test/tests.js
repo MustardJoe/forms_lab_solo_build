@@ -1,2 +1,2 @@
 import './service-request.test.js';
-import './jobtag-api.test';
+import './jobtag-api.test.js';

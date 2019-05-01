@@ -1,4 +1,4 @@
-/*import applicantApi from '../src/applicant-api.js';*/
+import jobtagApi from '../src/jobtag-api.js';
 const test = QUnit.test;
 
 QUnit.module('job tag api');
@@ -14,8 +14,8 @@ test('creates job tag api test', (assert) => {
 
     //Act 
     // Call the function you're testing and set the result to a const
-    applicantApi.save(applicant);
-    const result = applicantApi.get();
+    jobtagApi.save(jobTag);
+    const result = jobtagApi.get();
     //Assert
-    assert.deepEqual(result, applicant);
+    assert.deepEqual(result, jobTag);
 });
