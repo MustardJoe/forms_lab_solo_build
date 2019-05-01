@@ -8,3 +8,5 @@ const skillLevel = document.getElementById('skill-level');
 const workAmount = document.getElementById('work-amount');
 const accessories = document.getElementById('accessories');
 const story = document.getElementById('story');
+
+const jobtag = jobtagApi.get();
