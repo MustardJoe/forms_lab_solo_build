@@ -10,3 +10,15 @@ const accessories = document.getElementById('accessories');
 const story = document.getElementById('story');
 
 const jobtag = jobtagApi.get();
+
+if(!jobtag) {
+    window.location = './';
+}
+
+name.textContent = jobtag.name;
+instName.textContent = jobtag.instName;
+instType.textContent = jobtag.instType;
+skillLevel.textContent = jobtag.skillLevel;
+workAmount.textContent = jobtag.workAmount;
+accessories.textContent = jobtag.accessories;
+story.textContent = jobtag.story;

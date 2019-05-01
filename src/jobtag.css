@@ -7,13 +7,13 @@ dl {
 dt, dd {
     display: inline-flex;
     padding: 8px 10px;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-right: 50px;
     margin-left: 50px;
 }
 
 dt {
-    background-color: white;
+    background-color: rgb(95, 255, 194);
     font-weight: bolder;
 }
 

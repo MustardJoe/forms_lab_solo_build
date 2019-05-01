@@ -8,7 +8,7 @@ test('creates job tag api test', (assert) => {
     //Arrange
     // Set up your parameters and expectations
     const jobTag = {
-        name: 'SpongeBob'
+        name: 'Please fill out the form'
     
     };
 
