@@ -3,7 +3,6 @@ import jobtagApi from './jobtag-api.js';
 const tbody = document.getElementById('jobtags');
 
 const jobtags = jobtagApi.getAll();
-console.log('do we get here? jobtags.js');
 
 for(let i = 0; i < jobtags.length; i++) {
     const jobtag = jobtags[i];

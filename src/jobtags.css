@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    border: collapse;
+    border-spacing: 0em;
+}
+
+thead {
+    background: white;
+    font-size: 18px;
+}
+
+tr:nth-child(even) {
+    background: rgb(95, 255, 194);
+}
