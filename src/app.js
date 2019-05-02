@@ -14,4 +14,5 @@ form.addEventListener('submit', (event) => {
     console.log(jobTag);
     //will remove error by using jobtagApi instead of sonsole log to save data
     jobtagApi.save(jobTag);
+    window.location = 'thank-you.html';
 });
