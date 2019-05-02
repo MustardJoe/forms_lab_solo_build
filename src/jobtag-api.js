@@ -11,6 +11,7 @@ const jobtagApi = {
         const json = JSON.stringify(jobtags);
         //save to local storage
         jobtagApi.storage.setItem('jobtags', json);
+        console.log('saving json in jobtag-api');
     },
     get() {
         //use get all from api to get jobtags

@@ -10,9 +10,9 @@ form.addEventListener('submit', (event) => {
     const formData = new FormData(form);
 
 
-    const jobTag = serviceRequest(formData);
-    console.log(jobTag);
+    const jobtag = serviceRequest(formData);
+    console.log('inside event listener');
     //will remove error by using jobtagApi instead of sonsole log to save data
-    jobtagApi.save(jobTag);
-    window.location = 'thank-you.html';
+    jobtagApi.save(jobtag);
+    //window.location = 'thank-you.html';
 });

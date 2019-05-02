@@ -1,8 +1,9 @@
-import jobtagApi from './jobtag.js';
+import jobtagApi from './jobtag-api.js';
 
-const tbody = document.getElementById('applicants');
+const tbody = document.getElementById('jobtags');
 
 const jobtags = jobtagApi.getAll();
+console.log('do we get here? jobtags.js');
 
 for(let i = 0; i < jobtags.length; i++) {
     const jobtag = jobtags[i];
@@ -13,13 +14,17 @@ for(let i = 0; i < jobtags.length; i++) {
     nameCell.textContent = jobtag.name;
     tr.appendChild(nameCell);
 
-    const lineageCell = document.createElement('td');
-    lineageCell.textContent = jobtag.lineage;
-    tr.appendChild(lineageCell);
+    const instNameCell = document.createElement('td');
+    instNameCell.textContent = jobtag.instName;
+    tr.appendChild(instNameCell);
 
-    const roleCell = document.createElement('td');
-    roleCell.textContent = jobtag.role;
-    tr.appendChild(roleCell);
+    const instTypeCell = document.createElement('td');
+    instTypeCell.textContent = jobtag.instType;
+    tr.appendChild(instTypeCell);
+
+    const workAmountCell = document.createElement('td');
+    workAmountCell.textContent = jobtag.workAmount;
+    tr.appendChild(workAmountCell);
 
     tbody.appendChild(tr);
 }
