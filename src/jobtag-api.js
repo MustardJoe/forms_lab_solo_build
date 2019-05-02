@@ -1,5 +1,11 @@
+//marty equivalent === applicant-api.js
 const jobtagApi = {
+    storage: localStorage,
+
     save(jobtag) {
+        //get array of jobtags
+        const jobtags = jobtagApi.getAll();
+        
         //serialize JSON
         const json = JSON.stringify(jobtag);
         //save to local storage

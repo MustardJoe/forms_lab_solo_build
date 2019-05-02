@@ -1,3 +1,4 @@
+//marty equivalent === applicant.js
 import jobtagApi from './jobtag-api.js';
 
 //reference all DOM elements
