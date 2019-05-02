@@ -1,6 +1,6 @@
 body {
     background-color: mediumspringgreen;
-    width: 960px;
+    width: 850px;
 }
 
 header {
@@ -14,13 +14,17 @@ h1 {
 
 form {
     background: rgb(95, 255, 194);
-    width: 850px;
+    width: 800px;
     padding: 10px;
 }
 
 div {
     width: 800;
     text-align: center;
+}
+
+img {
+    width: 500px;
 }
 
 section {
@@ -36,6 +40,10 @@ button {
     height: 50px;
     width: 200px;
     font-size: 1.2em;
+}
+
+.bottom {
+    font-size: 1.4em;
 }
 
 .wehelp {
