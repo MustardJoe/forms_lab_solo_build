@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Got a busted uke? Dingused your djembe?</title>
+    <link rel="stylesheet" href="./src/main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Uncle Jonny's Instrument Repair Depot!</h1>
+        <h3>Please fill out the form with detailed information about your instrument.
+        <span class="wehelp">We can help!</span></h3>
+    </header>
+
+    <form id="repair-form">
+
+        <section id="top-o-form">
+            <h2>
+                Begin Form Now!
+            </h2>
+            <h4>
+                Please fill out a seperate form for each instrument in need
+                of repair.
+            </h4>    
+            <p>
+                <label class="stacked-label" for="name">Your Name:</label>
+                <input class="text-input" type="text" name="name" id="name" placeholder="a person name"
+                required>
+            </p>
+            <p>
+                <label class="stacked-label" for="inst-name">Your Instrument's Name:</label>
+                <input class="text-input" type="text" name="inst-name" id="inst-name" 
+                placeholder="Hank the Harmonium, etc." required>
+            </p>
+        </section>
+        
+        <section>
+            <h2>
+                Type of Instrument
+            </h2>
+            <label class="line-label" for="inst-type">
+                Choose the type of instrument you have:
+            </label>
+            <select id="inst-type" name="inst-type" required>
+                <option value="" hidden disabled selected>so many different kinds...</option>
+                <option value="stringed instrument">Stringed Instrument</option>
+                <option value="brass">Brass</option>
+                <option value="woodwind">Woodwind</option>
+                <option value="keyboard">Keyboard/Piano</option>
+                <option value="drums">Drums/Percussion</option>
+                <option value="other">Other/Uncategorizable</option>
+            </select>
+        </section>
+        
+        
+        <section>
+            <h2>
+                Skill Level
+            </h2>
+            <p>
+                Not that it matters (actually it secretly does), but on a scale of 1 to 1000,
+                how good are you at playing this instrument?
+            </p>
+            <p>
+                <label for="skill-level">Are you the best?</label>
+                <input type="range" name="skill-level" id="skill-level" min="1" 
+                max="1000" required>
+            </p>
+        </section>
+
+        <section>
+            <h2>Level of Work Required?</h2>
+            <input required type="radio" id="minimal" value="minimal" name="work-amount">
+            <label for="minimal">Minimal servicing</label>
+            <input required type="radio" id="setup" value="setup" name="work-amount">
+            <label for="setup">Full Setup</label>
+            <input required type="radio" id="deluxe" value="deluxe" name="work-amount">
+            <label for="deluxe">Deluxe Package</label>
+            <input required type="radio" id="busted" value="busted" name="work-amount">
+            <label for="busted">...It's <strong>REAL</strong> Busted...</label>
+        </section>
+
+        <h2>Extras:</h2>
+        <fieldset id="inst-acc">
+            <legend>
+                Will you be purchasing additional accessories?
+            </legend>
+            <div>
+                <input name="accessories" value="clarinet" type="checkbox" id="clarinet">
+                <label for="clarinet">Clarinet Reeds</label>
+            </div>
+            <div>
+                <input name="accessories" value="trombone" type="checkbox" id="trombone">
+                <label for="trombone">Trombone Slide Oil</label>
+            </div>
+            <div>
+                <input name="accessories" value="picks" type="checkbox" id="picks">
+                <label for="picks">Guitar Picks</label>
+            </div>
+            <div>
+                <input name="accessories" value="rosin" type="checkbox" id="rosin">
+                <label for="rosin">Bow Rosin</label>
+            </div>
+            <div>
+                <input name="accessories" value="bstrings" type="checkbox" id="bstrings">
+                <label for="bstring">Bass Guitar Strings</label>
+            </div>
+            <div>
+                <input name="accessories" value="cable" type="checkbox" id="cable">
+                <label for="cables">Instrument Cables</label>
+            </div>
+        </fieldset>
+
+        <div class="text-box">
+            <label for="story">
+                <p>Is there a humorous story about how you broke this instrument?</p>
+            </label>
+            <textarea name="story" id="story"></textarea>
+        </div>
+
+        <section id="button-part">
+            <h2>
+                We're Here to Help!
+            </h2>
+            <button>Submit Service Request</button>
+        </section>
+
+    </form>
+        
+        <div>
+            <a href="index.html">Main Page</a>
+        </div>
+    <script type="module" src="src/app.js"></script>
+    </body>
+    </html>
