@@ -12,11 +12,16 @@ const jobtagApi = {
         //save to local storage
         jobtagApi.storage.setItem('jobtags', json);
     },
-    get() {
+    get(name) {
         //use get all from api to get jobtags
         const jobtags = jobtagApi.getAll();
         //return array
-        return jobtags[0];
+        for(let i = 0; i < jobtags.length; i++) {
+            const jobtag = jobtags[i];
+            if(jobtag.name === name) {
+                return jobtag;
+            }
+        }
     },
     getAll() {
         const json = jobtagApi.storage.getItem('jobtags');

@@ -22,7 +22,7 @@ for(let i = 0; i < jobtags.length; i++) {
     nameCell.appendChild(link);
 
     //this line down to next comment maybe not needed
-    nameCell.textContent = jobtag.name;
+    //nameCell.textContent = jobtag.name;
     tr.appendChild(nameCell);
 
     const instNameCell = document.createElement('td');

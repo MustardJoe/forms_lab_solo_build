@@ -9,12 +9,14 @@ const testStorage = sessionStorage;
 test('round-trip job tag test', (assert) => {
     testStorage.removeItem('jobtags');
     // arrange
-    const jobtag = { name: 'tester' };
+    const jobtag1 = { name: 'tester1' };
+    const jobtag2 = { name: 'tester2' };
     // act
-    jobtagApi.save(jobtag);
-    const result = jobtagApi.get();
+    jobtagApi.save(jobtag1);
+    jobtagApi.save(jobtag2);
+    const result = jobtagApi.get(jobtag2.name);
     // assert
-    assert.deepEqual(result, jobtag);
+    assert.deepEqual(result, jobtag2);
 });
 
 test('no jobtags in local storage returns empty array', assert => {
