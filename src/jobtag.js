@@ -1,3 +1,4 @@
+//marty equivalent === applicant.js
 import jobtagApi from './jobtag-api.js';
 
 //reference all DOM elements
@@ -9,7 +10,11 @@ const workAmount = document.getElementById('work-amount');
 const accessories = document.getElementById('accessories');
 const story = document.getElementById('story');
 
-const jobtag = jobtagApi.get();
+// get the applicant name
+const searchParams = new URLSearchParams(window.location.search);
+const id = searchParams.get('name');
+
+const jobtag = jobtagApi.get(id);
 
 if(!jobtag) {
     window.location = './';
